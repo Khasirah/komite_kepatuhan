@@ -4,20 +4,37 @@
   </a>
 </p>
 
-<h1 align="center">Stisla for CodeIgniter</h1>
+<h1 align="center">I use Stisla for CodeIgniter</h1>
 
 <p align="center">
   Stisla is Free Bootstrap Admin Template and will help you to speed up your project, design your own dashboard UI and the users will love it.
 </p>
 
+<p align="center">
+  this template I use for <strong>App Komite Kepatuhan</strong> at <strong>KPP Pratama Jakarta Menteng Dua</strong>
+</p>
+
 [![Stisla Preview](https://camo.githubusercontent.com/2135e0f6544a7286a3412cdc3df32d47fc91b045/68747470733a2f2f692e6962622e636f2f3674646d6358302f323031382d31312d31312d31352d33352d676574737469736c612d636f6d2e706e67)](https://getstisla.com)
+
+## Feature
+- User Management
+  - Create
+  - Read
+  - Update
+  - Delete
+- Prognosa AR
+  - Choose SP2DK with estimate pay and estimate date pay
+- Prognosa Kasi
+  - Table reference of prognosa ar based on seksi
 
 ## Table of contents
 
+- [Feature](#feature)
+- [Table of contents](#table-of-contents)
 - [Link Stisla](#link-stisla)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#License)
+- [License](#license)
 
 ## Link Stisla
 - Homepage: [getstisla.com](https://getstisla.com)
