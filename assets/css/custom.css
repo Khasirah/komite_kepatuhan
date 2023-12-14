@@ -1,0 +1,42 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.w-5 {
+  width: 5% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+dialog {
+  width: 80%;
+  border: none !important;
+  border-radius: 0.5em;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 1.6rem;
+  max-height: 80%;
+}
+
+[data-close-modal] {
+  top: 10px;
+  right: 10px;
+}
