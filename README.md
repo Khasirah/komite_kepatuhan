@@ -34,6 +34,7 @@
 - [Link Stisla](#link-stisla)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contact Me](#contact-me)
 - [License](#license)
 
 ## Link Stisla
@@ -76,6 +77,12 @@ $this->load->view('dist/_partials/header'); ?>
 <?php
 $this->load->view('dist/_partials/footer'); ?>
 ```
+
+## Contact Me
+Ahmad Haris Kurniawan
+ahmadharisk@gmail.com
+or you can send letter to <strong>KPP Pratama Jakarta Menteng Dua</strong>
+
 
 ## License
 
