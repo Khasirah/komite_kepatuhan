@@ -13,7 +13,6 @@ $this->load->view('dist/_partials/header');
 
       <?php if ($this->session->flashdata('result')) {
         $result = $this->session->flashdata('result');
-
         if ($result['status']) { ?>
           <script>
             deleteAllDataFromLocal();
@@ -243,7 +242,7 @@ $this->load->view('dist/_partials/header');
 
             <div class="card">
               <div class="card-header">
-                <h4>Daftar SP2DK Usulan ga tau namanuya wkwkwk</h4>
+                <h4>Daftar SP2DK Usulan</h4>
               </div>
               <div class="card-body p-0">
                 <div class="table-responsive">

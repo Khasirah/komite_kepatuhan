@@ -7,21 +7,22 @@ class DetailsPrognosaAr_model extends CI_Model
 
   public function addDetailsPrognosa($dataFromController)
   {
-    // iterate data from controller 
-    $data = array();
-    for ($i = 0; $i < count($dataFromController['id_sp2dk']); $i++) {
-      // transform data from controller
-      $elem = array(
-        'id_prognosa_ar' => $dataFromController['id_prognosa_ar'],
-        'id_sp2dk' => $dataFromController['id_sp2dk'][$i],
-        'estimate_pay' => intval(str_replace(",", "", $dataFromController['estimate_pay'][$i])),
-        'estimate_date_pay' => $dataFromController['estimate_date_pay'][$i],
-        'desc_sp2dk' => $dataFromController['desc_sp2dk'][$i]
-      );
-      array_push($data, $elem);
-    }
-
+    
     try {
+      // iterate data from controller 
+      $data = array();
+      for ($i = 0; $i < count($dataFromController['id_sp2dk']); $i++) {
+        // transform data from controller
+        $elem = array(
+          'id_prognosa_ar' => $dataFromController['id_prognosa_ar'],
+          'id_sp2dk' => $dataFromController['id_sp2dk'][$i],
+          'estimate_pay' => intval(str_replace(",", "", $dataFromController['estimate_pay'][$i])),
+          'estimate_date_pay' => $dataFromController['estimate_date_pay'][$i],
+          'desc_sp2dk' => $dataFromController['desc_sp2dk'][$i]
+        );
+        array_push($data, $elem);
+      }
+
       $this->db->insert_batch($this->name_table, $data);
       return array(
         'status' => true,

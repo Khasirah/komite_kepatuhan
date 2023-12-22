@@ -91,7 +91,7 @@ $this->load->view('dist/_partials/header');
                   <label for="">Keterangan</label>
                   <textarea name="descPpm" class="form-control">-</textarea>
                 </div>
-                <strong>Total PPM Ar <span id="totalPPMAr" class="nominal text-primary"></span></strong>
+                <strong>Total PPM Ar <span id="totalPPMAr" class="nominal text-primary">0</span></strong>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ $this->load->view('dist/_partials/header');
                   <label for="">Keterangan</label>
                   <textarea name="descPkm" class="form-control">-</textarea>
                 </div>
-                <strong>Total PKM Ar <span id="totalPKMAr" class="nominal text-primary"></span></strong>
+                <strong>Total PKM Ar <span id="totalPKMAr" class="nominal text-primary">0</span></strong>
               </div>
             </div>
           </div>

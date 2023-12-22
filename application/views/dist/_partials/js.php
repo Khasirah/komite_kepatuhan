@@ -248,6 +248,8 @@ if ($this->uri->segment(2) == "" || $this->uri->segment(2) == "index") { ?>
   <script src="<?php echo base_url(); ?>assets/modules/cleave-js/dist/addons/cleave-phone.us.js"></script>
   <script src="<?php echo base_url(); ?>assets/modules/bootstrap-daterangepicker/daterangepicker.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/page/inputPrognosaKasi.js"></script>
+<?php } elseif ($this->uri->segment(2) == "listPrognosa") { ?>
+  <script src="<?php echo base_url(); ?>assets/js/page/listPrognosa.js"></script>
 <?php } ?>
 
 <!-- Template JS File -->
