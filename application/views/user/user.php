@@ -29,14 +29,13 @@ $this->load->view('dist/_partials/header');
                 <li class="nav-item">
                   <a class="nav-link active" href="<?= base_url(); ?>user/addUser"><i class="fas fa-plus"></i> Add New User</a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fas fa-file-import"></i> Import Users From CSV</a>
+                <li class="nav-item">
+                  <a class="nav-link import-btn" href="<?php echo base_url() ?>user/importUsers"><i class="fas fa-file-import"></i> Import Users From CSV</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"><i class="fas fa-file-export"></i> Export Users To CSV</a>
-                </li> -->
+                </li>
               </ul>
-
             </div>
             <div class="col-3">
             </div>

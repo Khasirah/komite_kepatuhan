@@ -136,9 +136,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <script src="<?php echo base_url(); ?>assets/modules/izitoast/js/iziToast.min.js"></script>
   <?php } elseif ($this->uri->segment(2) == "listUser") { ?>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/modules/izitoast/css/iziToast.min.css">
+
+    <!-- JS File -->
+    <script src="<?php echo base_url(); ?>assets/modules/izitoast/js/iziToast.min.js"></script>
   <?php } elseif ($this->uri->segment(2) == "profileUser") { ?>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/modules/izitoast/css/iziToast.min.css">
     <script src="<?php echo base_url(); ?>assets/modules/izitoast/js/iziToast.min.js"></script>
+  <?php } elseif ($this->uri->segment(2) == "importUsers") { ?>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/modules/izitoast/css/iziToast.min.css">
   <?php } ?>
 
   <!-- Template CSS -->

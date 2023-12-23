@@ -89,7 +89,7 @@ class Users_model extends CI_Model
         $this->db->delete($this->name_table);
         return array(
             'status' => true,
-            'desc' => "Berhasil update data <strong>" . $deletedUser->nip9 . "</strong> dengan nama <strong>" . $deletedUser->name . "</strong>"
+            'desc' => "Berhasil menghapus data <strong>" . $deletedUser->nip9 . "</strong> dengan nama <strong>" . $deletedUser->name . "</strong>"
         );
     }
 

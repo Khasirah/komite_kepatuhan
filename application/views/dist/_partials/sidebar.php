@@ -18,19 +18,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </ul>
       </li>
       <!-- start main menu -->
-      <li class="menu-header">Main Menu</li>
-      <li class="dropdown <?php echo $this->uri->segment(1) == 'prognosa' ? 'active' : ''; ?>">
-        <a class="nav-link has-dropdown" href="#"><i class="fas fa-hat-wizard"></i><span>Prognosa</span></a>
-        <ul class="dropdown-menu">
-          <li class="<?php echo $this->uri->segment(2) == 'daftarPrognosa' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>prognosa/listPrognosa">Daftar Prognosa</a></li>
-          <?php if (($user->id_role == "1") || ($user->id_position == "4")) { ?>
-            <li class="<?php echo $this->uri->segment(2) == 'inputPrognosaAr' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>prognosa/inputPrognosaAr">Input Prognosa AR</a></li>
-          <?php } ?>
-          <?php if (($user->id_role == "1") || ($user->id_position == "3")) { ?>
-            <li class="<?php echo $this->uri->segment(2) == 'inputPrognosaKasi' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>prognosa/inputPrognosaKasi">Input Prognosa Kasi</a></li>
-          <?php } ?>
-        </ul>
-      </li>
+      <?php if ($user->id_position != "1") { ?>
+        <li class="menu-header">Main Menu</li>
+        <li class="dropdown <?php echo $this->uri->segment(1) == 'prognosa' ? 'active' : ''; ?>">
+          <a class="nav-link has-dropdown" href="#"><i class="fas fa-hat-wizard"></i><span>Prognosa</span></a>
+          <ul class="dropdown-menu">
+            <li class="<?php echo $this->uri->segment(2) == 'daftarPrognosa' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>prognosa/listPrognosa">Daftar Prognosa</a></li>
+            <?php if ($user->id_position == "4") { ?>
+              <li class="<?php echo $this->uri->segment(2) == 'inputPrognosaAr' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>prognosa/inputPrognosaAr">Input Prognosa AR</a></li>
+            <?php } ?>
+            <?php if ($user->id_position == "3") { ?>
+              <li class="<?php echo $this->uri->segment(2) == 'inputPrognosaKasi' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>prognosa/inputPrognosaKasi">Input Prognosa Kasi</a></li>
+            <?php } ?>
+          </ul>
+        </li>
+      <?php } ?>
       <!-- end main menu -->
       <!-- start user management -->
       <?php if ($user->id_role == "1") { ?>

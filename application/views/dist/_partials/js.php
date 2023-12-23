@@ -250,7 +250,12 @@ if ($this->uri->segment(2) == "" || $this->uri->segment(2) == "index") { ?>
   <script src="<?php echo base_url(); ?>assets/js/page/inputPrognosaKasi.js"></script>
 <?php } elseif ($this->uri->segment(2) == "listPrognosa") { ?>
   <script src="<?php echo base_url(); ?>assets/js/page/listPrognosa.js"></script>
+<?php } elseif ($this->uri->segment(2) == "importUsers") { ?>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="<?php echo base_url(); ?>assets/modules/izitoast/js/iziToast.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/page/importUser.js"></script>
 <?php } ?>
+
 
 <!-- Template JS File -->
 <script src="<?php echo base_url(); ?>assets/js/scripts.js"></script>
